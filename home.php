@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="/Css/navigation.css">
 </head>
 <body>
+    <!-- navbar  -->
     <?php
     require 'navbar.php';
     ?>
+<div class="dash">
+    
+</div>
 </body>
 </html>

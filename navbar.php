@@ -1,13 +1,13 @@
 
 <header>
-    <div class="logo"><img style="filter: invert(100%);" src="/Images/Group 1000005572.png" alt="logo"></div>
+    <div onclick="document.location.href='home.php'" class="logo"><img style="filter: invert(100%);" src="/Images/Group 1000005572.png" alt="logo"></div>
     <nav>
         <ul>
-            <a href="#">Health tracker</a>
-            <a href="#">AI assistant</a>
-            <a href="#">Devices</a>
-            <a href="#">Blog</a>
-            <a href="#">About Us</a>
+            <a href="tracker.php">Health tracker</a>
+            <a href="ai.php">AI assistant</a>
+            <a href="devices.php">Devices</a>
+            <a href="Blog.php">Blog</a>
+            <a href="About us.php">About Us</a>
         </ul>
     </nav>
     <div class="accountsection">
