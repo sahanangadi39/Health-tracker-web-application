@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+header{
+    display: flex;
+    background-color: #ECE1F9;
+}
+.logo{
+    margin: auto 0px auto 60px;
+}
+
+nav{
+    display: flex;
+    margin: auto 15% auto auto;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 15px;
+    font-weight: bold;
+}
+
+.accountsection{
+    display: flex;
+    margin: auto 60px auto 10;
+
+}
+.accountsection img{
+    width: fit-content;
+    height: 25px;
+    margin: 10px;
+}
