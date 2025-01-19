@@ -8,7 +8,7 @@
 .login {
     display: flex;
     flex-direction: column;
-    background-color: #D9D9D9;
+    background-color: #ECE1F9;
     margin: 100px auto 0px auto;
     width: fit-content;
     border-radius: 18px;
@@ -25,7 +25,6 @@ hr{
     width: 100%;
     text-align: center;
     margin-left: 0px;
-
     border: 1px solid #5D5858;
     
 }
@@ -38,12 +37,14 @@ hr{
 
 .logocontainer {
     justify-content: center;
-    background-color: white;
+    background-image: url(/Images/image.png);
+    background-size: cover;
+   background-position: center;
     border-radius: 6px;
-    width: 20em;
+    width: 19em;
     height: 25em;
     display: flex;
-
+    flex-direction: column;
 }
 
 .logo {
@@ -54,16 +55,27 @@ hr{
     display: flex;
     flex-direction: column;
 }
+#emailform button{
+    margin-left: 20px;
+    background-color: #3A49DA;
+    width: fit-content;
+    padding: 4px 18px;
+   
+}
 #socialform{
     display: flex;
+}
+#socialform button{
+    color: black;
 }
 .formcontainer button{
 margin: 12px auto;
 padding: 6px 25px;
-background-color: #5D5858;
+background-color: #ffffff;
 color: #fff;
 border-radius: 6px;
 cursor: pointer;
+font-weight: bold;
 }
 .formcontainer{
     margin: 15px;
@@ -75,18 +87,14 @@ cursor: pointer;
 
 .formcontainer input{
     margin: 12px 12px 8px 12px;
-    background-color: #c2c2c2;
+    background-color: #fff;
     border-radius: 8px;
-    padding: 6px 12px;
+    padding: 6px 20px;
 }
+
 
 input::placeholder{
     color: rgb(0, 0, 0);
     opacity: 1;
     
-}
-
-#emailform button{
-width: fit-content;
-padding: 4px 18px;
 }
