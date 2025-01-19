@@ -1,0 +1,89 @@
+/* Section 1 */
+#section1{
+    display: flex;
+    margin: 10px;
+}
+#section1 button,#section1 select,#section1 option{
+    background-color: white;
+}
+#section1 *{
+    margin: 10px;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+/* Section 2 */
+#section2{
+margin: 10px;
+display: flex;
+}
+.heightinput,.weightinput{
+ display: flex;
+display: inline-block;
+background-color: white;
+margin: 6px;
+width: fit-content;
+padding: 10px;
+border-radius: 6px;
+text-align: center;
+}
+
+
+
+.rightsection{
+    display: flex;
+    flex-direction: column;
+    margin: auto 60px auto auto;
+}
+#section2 select, #section2 option{
+    background-color: white;
+    margin: 10px;
+    padding: 6px 30px 6px 8px;
+    border-radius: 6px;
+}
+
+/* Section 3  */
+#section3{
+display: grid;
+grid-template-columns: repeat(6, 125px); 
+margin: 10px;
+}
+
+#section3 button{
+    padding: 8px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+hr{
+    border-color: rgb(116, 116, 187);
+    margin: 10px 0px 10px 0px;
+}
+
+
+
+
+
+
+/* remove ip number arrows */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.submitbtn{
+    padding: 8px 12px;
+    margin: 15px;
+    background-color: #3A49DA;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}

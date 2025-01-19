@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health is Wealth</title>
     <link rel="stylesheet" href="/Css/login.css">
-    <!-- <link rel="shortcut icon" href="/Images/Group 1000005572.png" type="image/x-icon"> -->
 </head>
 
 <body>
