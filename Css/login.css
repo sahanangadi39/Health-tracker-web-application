@@ -78,7 +78,7 @@ cursor: pointer;
 font-weight: bold;
 }
 .formcontainer{
-    margin: 15px;
+    margin: 15px 35px 15px 35px;
 }
 
 .formcontainer *{
@@ -96,5 +96,4 @@ font-weight: bold;
 input::placeholder{
     color: rgb(0, 0, 0);
     opacity: 1;
-    
 }
