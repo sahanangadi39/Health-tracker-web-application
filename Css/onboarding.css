@@ -6,9 +6,16 @@
 #section1 button,#section1 select,#section1 option{
     background-color: white;
 }
+
+.login h3{
+    font-weight: 700;
+    font-size: 25px;
+    color: #3D0156;
+}
+
 #section1 *{
     margin: 10px;
-    padding: 4px 10px;
+    padding: 4px 40px 4px 8px ;
     border-radius: 6px;
 }
 /* Section 2 */
@@ -22,7 +29,7 @@ display: inline-block;
 background-color: white;
 margin: 6px;
 width: fit-content;
-padding: 10px;
+padding: 15px;
 border-radius: 6px;
 text-align: center;
 }
@@ -32,7 +39,7 @@ text-align: center;
 .rightsection{
     display: flex;
     flex-direction: column;
-    margin: auto 60px auto auto;
+    margin: auto 150px auto auto;
 }
 #section2 select, #section2 option{
     background-color: white;
@@ -46,6 +53,7 @@ text-align: center;
 display: grid;
 grid-template-columns: repeat(6, 125px); 
 margin: 10px;
+font-weight: 400;
 }
 
 #section3 button{
@@ -57,7 +65,9 @@ margin: 10px;
 }
 
 hr{
-    border-color: rgb(116, 116, 187);
+    background-color: #0076D3;
+    height: 1.8px;
+    border-radius: 10px;
     margin: 10px 0px 10px 0px;
 }
 
@@ -79,7 +89,7 @@ input[type=number] {
 }
 
 .submitbtn{
-    padding: 8px 12px;
+    padding: 6px 26px;
     margin: 15px;
     background-color: #3A49DA;
     color: white;

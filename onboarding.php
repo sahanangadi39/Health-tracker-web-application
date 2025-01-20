@@ -11,6 +11,11 @@
     <title>Health is Wealth</title>
     <link rel="stylesheet" href="/Css/login.css">
     <link rel="stylesheet" href="/Css/onboarding.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,7 +24,7 @@
         <form action="" method="post">
             <div id="section1">
                 <input placeholder="Name" required type="text" name="name" id="nameinput">
-                <input placeholder="age" required min="0" max="110" type="number" name="age" id="ageinput">
+                <input size="8" placeholder="Age" required min="0" max="1000" type="number" name="age" id="ageinput">
                 <select required name="sex" id="sexinput">
                     <option value="" disabled selected>Sex</option>
                     <option value="Male">Male</option>
