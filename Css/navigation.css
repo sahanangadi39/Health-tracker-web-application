@@ -8,11 +8,13 @@
 header{
     display: flex;
     background-color: #ECE1F9;
+    font-family: "Open Sans", serif;
+
 }
 .logo{
     margin: auto 0px auto 120px;
     cursor: pointer;
-    scale: 0.7;
+    scale: 0.65;
 }
 
 nav{
@@ -29,7 +31,7 @@ nav a{
     color: black;
     margin: 0px 15px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 

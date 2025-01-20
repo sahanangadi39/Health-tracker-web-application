@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+/* upper section  */
+#preventationcontainer {
+    width: 99%;
+    height: fit-content;
+    background-color: #F4F5F8;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+#preventationcontainer .blogleftimage {
+    display: flex;
+    scale: 0.9;
+    margin: auto auto auto 93px;
+}
+
+#preventationcontainer .blogrightcontent {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    font-family: "Montserrat", serif !important;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#preventationcontainer .blogrightcontent h2 {
+    margin-bottom: 25px;
+}
+
+/* blog link section  */
+
+
+
+#healthblogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 60px;
+    scale: 0.8;
+    row-gap: 100px;
+}
+
+#healthblogs img {
+    width: 100%; 
+    height: auto; 
+    cursor: pointer;
+  }
