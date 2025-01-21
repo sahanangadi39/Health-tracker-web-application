@@ -29,16 +29,11 @@
     ?>
 
     <div class="dash">
-        <div class="skill">
-            <div class="outer">
-                <div class="inner">
+        <div class="outer">
+            <div class="inner">
                     
-                </div>
             </div>
         </div>
-
-
-        
     </div>
     <?php require 'footer.php'; ?>
 </body>
