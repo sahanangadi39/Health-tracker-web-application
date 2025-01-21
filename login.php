@@ -17,7 +17,11 @@ if($num == 1){
     $_SESSION["email"] = $inputemail;
     header("location: home.php");
     die();
+}elseif(isset($_POST["submitbtn"])){
+    $invalidcredentials = true;
 }
+    
+
 
 ?>
 
@@ -55,7 +59,13 @@ if($num == 1){
                 <form id="emailform" action="login.php" method="post">
                     <input required placeholder="Email id" type="email" name="email" id="emailip">
                     <input required placeholder="Password" type="password" name="passphrase" id="passphraseip">
-                    <button type="submit">Log In</button>
+                    <?php 
+                        if($invalidcredentials){
+                            echo '<p style="font-size: 12px; color: red; margin-left: 10px;">Incorrect Credentials!</p>';
+
+                        }
+                    ?>
+                    <button name="submitbtn" type="submit">Log In</button>
                 </form>
             </div>
         </div>
