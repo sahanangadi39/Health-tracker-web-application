@@ -41,7 +41,7 @@
 
 
     <div id="healthblogs">
-        <img src="/Images/Blog/nutrition.png" alt="Nutrition">
+        <img onclick="window.location.href='nutrition.php'" src="/Images/Blog/nutrition.png" alt="Nutrition">
         <img src="/Images/Blog/hyderation.png" alt="Hyderation">
         <img src="/Images/Blog/goodposture.png" alt="Good posture">
         <img src="/Images/Blog/exercise.png" alt="Exercise">

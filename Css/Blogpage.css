@@ -1,0 +1,43 @@
+
+#uppersection,#lowersection{
+    display: flex;
+    margin: 80px auto 0px auto;
+    width: 90%;
+}
+
+#image img{
+    height: auto;
+    width: 100%;
+
+}
+
+ .contentdiv{    /*upper section */
+    width: 40%;
+    min-width: 35%;
+    margin: 30px auto;
+}
+
+
+/* lower section  */
+
+#lowersection{
+    margin: 2% auto 6% auto;
+}
+
+#lowerleft{
+    width: 35%;
+}
+#lowerright{
+    margin: auto auto auto 194px;
+    width: 45%;
+}
+
+h1{
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    margin-bottom: 30px;
+}
+p{
+    font-weight: 400;
+    font-size: 18px;
+}
