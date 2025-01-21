@@ -42,11 +42,11 @@
 
     <div id="healthblogs">
         <img onclick="window.location.href='nutrition.php'" src="/Images/Blog/nutrition.png" alt="Nutrition">
-        <img src="/Images/Blog/hyderation.png" alt="Hyderation">
-        <img src="/Images/Blog/goodposture.png" alt="Good posture">
-        <img src="/Images/Blog/exercise.png" alt="Exercise">
-        <img src="/Images/Blog/hearthealth.png" alt="Heart Health">
-        <img src="/Images/Blog/stressmanagement.png" alt="Stress management">
+        <img onclick="window.location.href='hydration.php'" src="/Images/Blog/hyderation.png" alt="Hyderation">
+        <img onclick="window.location.href='goodposture.php'" src="/Images/Blog/goodposture.png" alt="Good posture">
+        <img onclick="window.location.href='exercise.php'" src="/Images/Blog/exercise.png" alt="Exercise">
+        <img onclick="window.location.href='hearthealth.php'" src="/Images/Blog/hearthealth.png" alt="Heart Health">
+        <img onclick="window.location.href='stressmanagement.php'" src="/Images/Blog/stressmanagement.png" alt="Stress management">
     </div>
 
 <?php
