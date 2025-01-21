@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing :border-box;
+    font-family:'Poppins',sans-serif;
+
+
+}
+
+body{
+    background-color:whitesmoke;
+    height: 100vh;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+.skill {
+
+
+
+}
+
+.outer{
+    height: 562px;
+    width: 563px;
+    top: 122px;
+    left: 92px;
+    
+    padding-top: 46px;
+    padding-left: 42px;
+    padding-bottom: 46px;
+    padding-right: 42px;
+
+}
