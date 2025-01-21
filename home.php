@@ -19,8 +19,9 @@
     require 'navbar.php';
     ?>
     <div class="dash">
-
+        
     </div>
+    <?php require 'footer.php'; ?>
 </body>
 
 </html>

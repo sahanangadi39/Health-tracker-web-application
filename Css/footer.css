@@ -15,7 +15,7 @@ footer {
     flex-direction: column;
     margin: auto;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     font-family: "Montserrat", serif !important;
     font-weight: 500;
 }
@@ -25,7 +25,7 @@ footer {
     text-decoration: none;
     font-family: "Montserrat", serif !important;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 17px;
     margin: 2px;
 }
 
