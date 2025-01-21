@@ -28,6 +28,8 @@
     require 'navbar.php';
     ?>
 
+
+
     <div class="dash">
         <div class="container">
             <div class="outer">
@@ -36,8 +38,7 @@
                            65%
                         </div>
                 </div>
-            
-        </div>
+            </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
          <defs>
@@ -50,6 +51,9 @@
              </svg>
          </div>
     </div>
+
+
+
     <?php require 'footer.php'; ?>
 </body>
 
