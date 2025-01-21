@@ -1,6 +1,6 @@
 <?php
 require '/dbconnect/connect.php';
-$connection = mysqli_connect($host,$username,$passphrase,$database);
+// $connection = mysqli_connect($host,$username,$passphrase,$database);
 
 
 ?>
