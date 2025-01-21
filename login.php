@@ -1,10 +1,10 @@
 <?php
-session_start();
-require '/dbconnect/connect.php';
-$connection = mysqli_connect($host,$username,$passphrase,$database);
-if(!$connection){
-    die("Error!" . mysqli_connect_error());
-}
+// session_start();
+// require '/dbconnect/connect.php';
+// $connection = mysqli_connect($host,$username,$passphrase,$database);
+// if(!$connection){
+//     die("Error!" . mysqli_connect_error());
+// }
 $inputemail = process($_POST["email"]);
 $inputpassword = process($_POST["passphrase"]);
 
