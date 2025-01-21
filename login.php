@@ -1,18 +1,22 @@
 <?php
+session_start();
 require '/dbconnect/connect.php';
 $connection = mysqli_connect($host,$username,$passphrase,$database);
 if(!$connection){
     die("Error!" . mysqli_connect_error());
 }
-$inputemail = $_POST["email"];
-$inputpassword = $_POST["passphrase"];
+$inputemail = process($_POST["email"]);
+$inputpassword = process($_POST["passphrase"]);
 
 $sqlquery = "select * from users where email = '$inputemail' AND password = '$inputpassword'";
 $result = mysqli_query($connection,$sqlquery);
 $num = mysqli_num_rows($result);
 
 if($num == 1){
+    
+    $_SESSION["email"] = $inputemail;
     header("location: home.php");
+    die();
 }
 
 ?>
