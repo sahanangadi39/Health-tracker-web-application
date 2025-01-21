@@ -53,8 +53,8 @@ if($num == 1){
                 <hr>
                 <p>or continue with Email address</p>
                 <form id="emailform" action="login.php" method="post">
-                    <input placeholder="Email id" type="email" name="email" id="emailip">
-                    <input placeholder="Password" type="password" name="passphrase" id="passphraseip">
+                    <input required placeholder="Email id" type="email" name="email" id="emailip">
+                    <input required placeholder="Password" type="password" name="passphrase" id="passphraseip">
                     <button type="submit">Log In</button>
                 </form>
             </div>
