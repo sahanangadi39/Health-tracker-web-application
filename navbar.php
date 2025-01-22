@@ -13,7 +13,7 @@
     <div class="accountsection">
         <img src="/Images//help.png" alt="Help">
         <img src="/Images/notification.png" alt="Notifications">
-        <img src="/Images/account.png" alt="Account">
+        <img onclick="window.location.href='profile.php'" src="/Images/account.png" alt="Account">
     </div>
 
 </header>

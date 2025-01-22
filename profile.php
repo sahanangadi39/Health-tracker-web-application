@@ -40,7 +40,7 @@ $disabilitystatus = "None";
             <div id="profilestatus">
                 <div id="name">Name: &nbsp <?php echo $name; ?></div>
                 <div id="age-sex-marital">
-                    <div id="age">Age: &nbxp <?php echo $age; ?></div>
+                    <div id="age">Age: &nbsp <?php echo $age; ?></div>
                     <div id="sex">Sex: &nbsp <?php echo $sex; ?></div>
                     <div id="marital">Marital Status: &nbsp <?php echo $maritalstatus ?> </div>
                 </div>
