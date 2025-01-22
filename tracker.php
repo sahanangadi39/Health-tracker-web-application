@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health tracker</title>
     <link rel="stylesheet" href="/Css/navigation.css">
+    <link rel="stylesheet" href="/Css/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +18,10 @@
 <body>
     <?php
     require 'navbar.php';
+    ?>
+
+    <?php
+    require 'footer.php'
     ?>
 </body>
 
