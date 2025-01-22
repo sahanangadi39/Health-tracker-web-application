@@ -49,8 +49,8 @@
                 <div class="weightinput">
                     <img src="/Images/weight.png" alt="weight icon">
                     <br>
-                    <label for="Height">Height: &nbsp;&nbsp;&nbsp</label>
-                    <input min="0" max="200" type="number" name="Height" id="Height"> kg
+                    <label for="Weight">Weight: &nbsp;&nbsp;&nbsp</label>
+                    <input min="0" max="200" type="number" name="Weight" id="Weight"> kg
                 </div>
 
                 <div class="rightsection">
