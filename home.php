@@ -34,9 +34,11 @@
         <div class="container">
             <div class="outer">
                 <div class="inner">
-                        <div id="number">
-                           65%
-                        </div>
+                        <div id="TextContainer">
+                      <p class="text1"> 8.5 hours</p>
+                      <p class="text2">Screen time</p>
+                        </div>              
+                       
                 </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -44,7 +46,6 @@
              </svg>
          </div>
     </div>
-
 
 
     <?php require 'footer.php'; ?>
