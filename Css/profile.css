@@ -72,16 +72,14 @@ hr{
 /* lower profile  */
 #lowerprofile{
     margin: 20px auto 120px 160px;
-    width: 100%;
     height: auto;
-    scale: 1.1;
+    width: fit-content;
 }
 
 #lowerprofile #section3{
     padding: 4px;
     margin: 20px auto 10px auto;
     gap: 20px;
-    width: 100%;
     height: auto;
 }
 #lowerprofile #section3 div{
