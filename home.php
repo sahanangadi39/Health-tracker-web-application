@@ -45,8 +45,13 @@
                 <circle cx="80" cy="80" r="70" stroke-linecap="round" />
              </svg>
          </div>
+         <div class="disclamer">
+            <img src="/Images/dash/Mask group.svg" alt="">
+            <p >You have been working for almost 4 hours without breaks!!</p>
+         </div>
     </div>
 
+    
 
     <?php require 'footer.php'; ?>
 </body>

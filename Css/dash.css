@@ -1,25 +1,32 @@
 
 .dash{
+    scale: 0.8;
     border-radius: 30px;
-    scale: 1.1;
     margin-left: auto;
     width: fit-content;
-    margin-right: 140px;
+    margin-right: 50px;
     margin-top: 70px;
     margin-bottom: 70px;
     box-shadow: 1px 1px 20px rgba(0,0,0,0.15),
         1px 1px 20px rgba(255,255,255,0.7);
+    padding-bottom: 40px;
+    padding-right: 30px ;
+    padding-left:30px ;
 }
 .container{
-    
+    scale: 1.2;
     width: 20vw;
     height: 20vh;
     background-color: white;
-    padding: 46px 42px 46px 42px;
+    /* padding-top: 30; */
+    /* padding: 40px 40px 40px 40px; */
     display: flex;
     align-items:center;
     justify-content: center ;
     position: relative;
+    margin: auto;
+    z-index: -1;
+
 }
 
 .outer{
@@ -91,6 +98,8 @@ circle{
     stroke-dashoffset: 472;
     animation: anim 2s linear forwards;
 
+    
+
 }
 
 
@@ -101,4 +110,30 @@ circle{
     100%{
         stroke-dashoffset: 165.2;
     }
+}
+
+.disclamer{
+    padding: 4px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top : 40px;
+    margin-bottom: 40px;
+    border: 2px solid #D9D9D9 ;
+    border-radius: 5px;
+    /* z-index: 5; */
+    
+    
+    
+}
+.disclamer p{
+    font-size: 12px;
+    padding: 10px;
+}
+.disclamer img{
+    border-right: 2px solid #D9D9D9 ;
+    padding: 10px 15px;
+    
+
 }
