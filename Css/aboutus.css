@@ -1,0 +1,43 @@
+#aboutusimage {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#aboutusimage {
+    margin: 80px auto;
+    width: fit-content;
+}
+
+#aboutusimage #image {
+    justify-content: center;
+    background-image: url(/Images/group.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    width: 1412px;
+    height: 654px;
+    display: flex;
+    flex-direction: column;
+}
+
+p,
+b,
+div,
+h1 {
+    font-family: "Open Sans", serif;
+
+}
+
+#aboutustext h1 {
+    margin: 10px auto;
+    width: 1412px;
+}
+
+#aboutustext p {
+    /* margin: 5px 180px; */
+    width: 1412px;
+    margin: 5px auto;
+    font-weight: 400;
+    font-size: 31.83px;
+}
