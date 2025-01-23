@@ -43,7 +43,6 @@
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
     flex-direction: column;
-
 }
 
 #innerprogressbar {
@@ -63,7 +62,9 @@
 #stroke-circle {
     stroke-dasharray: 952;
     stroke-dashoffset: 952;
-    animation: anime 1s linear forwards;
+    /* transform: rotate(60deg); */
+    animation: anime 0.8s ease-in-out forwards;
+
 }
 
 /* @keyframes anime {
