@@ -1,139 +1,97 @@
+*{
+    font-family: "Open Sans", serif;
 
-.dash{
-    scale: 0.8;
-    border-radius: 30px;
-    margin-left: auto;
-    width: fit-content;
-    margin-right: 50px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    box-shadow: 1px 1px 20px rgba(0,0,0,0.15),
-        1px 1px 20px rgba(255,255,255,0.7);
-    padding-bottom: 40px;
-    padding-right: 30px ;
-    padding-left:30px ;
 }
-.container{
-    scale: 1.2;
-    width: 20vw;
-    height: 20vh;
-    background-color: white;
-    /* padding-top: 30; */
-    /* padding: 40px 40px 40px 40px; */
+
+#upperdashboard {
     display: flex;
-    align-items:center;
-    justify-content: center ;
-    position: relative;
-    margin: auto;
-    z-index: -1;
+    height: 70vh;
+    width: 100vw;
+}
+
+#upperrightdashboard{
+        margin: auto 10vw auto  auto;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
 
 }
 
-.outer{
-    background-color: #84FF5F;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    padding: 20px;
-    position: relative;
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-                -6px -6px 10px 1px rgba(255,255,255,0.7);
+#upperrightdashboard button{
+    padding: 15px 30px;
+    border-radius: 6px;
+    background-color: #3A49DA;
+    font-weight: 700;
+    color: white;
+    font-family: "Open sans",serif;
+    margin: 40px auto;
 }
 
-.inner{
-    background-color: white;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    position:absolute ;
-    top: 50%;
-    left: 50%;
+#rightprogressbar{
+    scale: 1;
+    /* margin: auto 10vw auto  auto; */
+    position: relative;
+    width: 40vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(-50%, -50%);
-    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.15),
-                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-                -0.5px -0.5px 0px rgba(255,255,255,0.7),
-                 0.5px 0.5px 0px rgba(0,0,0,0.15),
-                 0px 12px 10px -10px rgba(0,0,0,0.5);
-}
-
-.TextContainer{
-    color: black;
-    font-family: Arial, sans-serif;
-    position: relative;
-}
-
-.text1{
-    /* font-size: 24px; */
-    align-items: center;
-      font-weight: bold;
-      margin: 0;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
 
 }
-.text2{
-    font-weight: normal;
-      color: gray; 
-      margin: 0;
 
-}
-svg{
-    width: 160px;
-    height: 160px;
+#innerprogressbar {
     display: flex;
-    position:absolute;
-    top: 50%;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
     left: 50%;
-    border-radius: 50%;
     transform: translate(-50%, -50%);
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
 
 }
 
-circle{
-    fill: none;
-    stroke: #3A49DA ;
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    animation: anim 2s linear forwards;
-
-    
-
+#stroke-circle {
+    stroke-dasharray: 952;
+    stroke-dashoffset: 952;
+    animation: anime 1s linear forwards;
 }
 
-
-/* maths for percentage --> stroke-dasharray - stroke-dashoffset * percentage we display 
-    472 - 472 * 0.65 = 165.2
-*/
-@keyframes anim{
-    100%{
-        stroke-dashoffset: 165.2;
+/* @keyframes anime {
+    100% {
+        stroke-dashoffset: 476;
     }
-}
+} */
 
 .disclamer{
-    padding: 4px;
-    background-color: #F5F5F5;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top : 40px;
-    margin-bottom: 40px;
-    border: 2px solid #D9D9D9 ;
-    border-radius: 5px;
-    /* z-index: 5; */
-    
-    
-    
+    background-color: #F5F5F5;
+    margin: 20px;
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+
+}
+.disclamer svg, .disclamer p{
+    margin: auto;
+}
+.disclamer svg{
+    border-right: 2px solid #D9D9D9;
+    padding: 12px;
 }
 .disclamer p{
-    font-size: 12px;
-    padding: 10px;
-}
-.disclamer img{
-    border-right: 2px solid #D9D9D9 ;
-    padding: 10px 15px;
-    
+    padding: 4px 12px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "open-sans", serif;
+    margin: auto 20 auto 20px;
 
 }
