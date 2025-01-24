@@ -121,7 +121,7 @@ $screentime = 952 - 952 * $percentage; // in percentage
                             <path d="M-1 -4H51V48H-1V-4Z" fill="#FF5F5F" />
                         </g>
                     </svg>
-                    <p>You have been working for almost <?php echo $continuework; ?> hours without breaks</p>
+                    <p>You have been working for almost <?php echo $continuework_inscreentime ?> hours without breaks</p>
                 </div>
 
             </div>
