@@ -49,14 +49,21 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 35%;
+    top: 14vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: fit-content;
-    height: fit-content;
+    width: 12vh;
+    height: 12vh;
     justify-content: center;
     align-items: center;
 
+}
+
+#innerprogressbar p{
+    font-size: 2vh;
+}
+#innerprogressbar h3{
+    font-size: 2.5vh;
 }
 
 #stroke-circle {
@@ -64,6 +71,7 @@
     stroke-dashoffset: 952;
     /* transform: rotate(60deg); */
     animation: anime 0.8s ease-in-out forwards;
+    stroke-linecap: round;
 
 }
 
@@ -91,7 +99,7 @@
 .disclamer p{
     padding: 4px 12px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8vh;
     font-family: "open-sans", serif;
     margin: auto 20 auto 20px;
 

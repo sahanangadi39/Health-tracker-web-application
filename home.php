@@ -5,11 +5,11 @@
 //         die();
 //     }
 
-
-$continuework = 4;
-$totalofficeworingtime = 7;
-$percentage = $continuework/$totalofficeworingtime;
-$strokevalue = 952 - 952*$percentage;
+$username;
+$continuework_inscreentime = 3.6; //in hours
+$totalofficeworingtime = 7; // in hours
+$percentage = $continuework_inscreentime / $totalofficeworingtime;
+$screentime = 952 - 952 * $percentage; // in percentage
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +29,7 @@ $strokevalue = 952 - 952*$percentage;
     <style>
         @keyframes anime {
             100% {
-                stroke-dashoffset: <?php echo $strokevalue ?>;
+                stroke-dashoffset: <?php echo $screentime ?>;
             }
         }
     </style>
@@ -42,10 +42,27 @@ $strokevalue = 952 - 952*$percentage;
     require 'navbar.php';
     ?>
 
+
     <!-- Dashboard  -->
     <div id="upperdashboard">
 
+        <!-- Left side  -->
+        <div id="upperleftdashboard">
 
+            <h1>Hey &nbsp; <?php echo $username; ?>,</h1>
+            <p>Here is how you are doing today</p>
+
+            <div id="rewards-container">
+
+            <div id="user-grid-analysis">
+                
+            </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right side  -->
         <div id="upperrightdashboard">
 
             <!-- Progress bar  -->
@@ -88,7 +105,7 @@ $strokevalue = 952 - 952*$percentage;
                         </defs>
                     </svg>
 
-                    <h3><?php echo $continuework; ?> Hours</h3>
+                    <h3><?php echo $continuework_inscreentime; ?> Hours</h3>
                     <p>Screen Time</p>
 
                 </div>
