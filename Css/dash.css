@@ -3,10 +3,11 @@
 
 }
 
-#upperdashboard {
+.upperdashboard {
     display: flex;
-    height: 70vh;
-    width: 100vw;
+    height: 78vh;
+    width: 100%;
+    padding: 10px;
 }
 
 #upperrightdashboard{
@@ -31,9 +32,8 @@
 
 #rightprogressbar{
     scale: 1;
-    /* margin: auto 10vw auto  auto; */
     position: relative;
-    width: 40vh;
+    width: 25vw;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@
     top: 14vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 12vh;
+    width: 12vw;
     height: 12vh;
     justify-content: center;
     align-items: center;
@@ -69,8 +69,7 @@
 #stroke-circle {
     stroke-dasharray: 952;
     stroke-dashoffset: 952;
-    /* transform: rotate(60deg); */
-    animation: anime 0.8s ease-in-out forwards;
+    animation: anime 1s ease-in-out forwards;
     stroke-linecap: round;
 
 }
@@ -103,4 +102,41 @@
     font-family: "open-sans", serif;
     margin: auto 20 auto 20px;
 
+}
+
+ /* dashboard left side  */
+
+#upperleftdashboard{
+    display: flex;
+    padding: 30px;
+    height: fit-content;
+    /* background-color: #3f4479; remove later */
+    flex-direction: column;
+    width: fit-content;
+    position: relative;
+    margin: 7vh auto 60px auto;
+}
+
+#leftgrid{
+display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;
+  width: 40vw;
+  margin: 50px auto;
+  width: fit-content;
+  /* position: absolute; */
+}
+
+.leftgridstroke{
+    stroke-dasharray: 349;
+    stroke-dashoffset: 349;
+    animation: leftanime 1s ease-in-out forwards;
+    stroke-linecap: round;
+}
+ 
+
+@keyframes leftanime {
+    100%{
+        stroke-dashoffset: 180;
+    }
 }

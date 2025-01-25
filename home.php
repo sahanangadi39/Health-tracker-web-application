@@ -6,7 +6,7 @@
 //     }
 
 $username = "Demo user";
-$continuework_inscreentime = 3.6; //in hours
+$continuework_inscreentime = 4.3; //in hours
 $totalofficeworingtime = 7; // in hours
 $percentage = $continuework_inscreentime / $totalofficeworingtime;
 $screentime = 952 - 952 * $percentage; // in percentage
@@ -44,7 +44,7 @@ $screentime = 952 - 952 * $percentage; // in percentage
 
 
     <!-- Dashboard  -->
-    <div id="upperdashboard">
+    <div class="upperdashboard">
 
         <!-- Left side  -->
         <div id="upperleftdashboard">
@@ -54,11 +54,16 @@ $screentime = 952 - 952 * $percentage; // in percentage
 
             <div id="rewards-container">
 
-            <div id="user-grid-analysis">
-                
             </div>
 
+            <div id="leftgrid">
+                <?Php
+               require 'vectors/leftgrid-svg.php'
+
+                ?>
             </div>
+
+
 
         </div>
 
