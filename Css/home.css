@@ -1,6 +1,70 @@
-#health-insights{
+#health-insights-container{
     display: flex;
+    flex-direction: column;
     background-color: #ECE1F9;
     padding: 40px 7vw;
     margin: 40px 0px;
 }
+#health-insights{
+    display: flex;
+    margin: 10vh 0px;
+
+}
+#health-insights div{
+    margin: auto;
+}
+#graph-freq, #graph-freq option{
+    background-color: #004486;
+    color: #FFFF;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+#graph-freq-container{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    margin: auto;
+}
+
+
+/* middle portion metric selector */
+
+.metric{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 70px 10px 10px;
+    border-top: 1.5px solid white;
+    color: white;
+    cursor: pointer;
+
+}
+.metric-container{
+    background-color: #0076D3;
+    margin-top: 50px;
+    border-radius: 10px;
+
+}
+
+/* insights text container  */
+
+#insights-text-container{
+    width: 30vh;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+/* Animation Experimental */
+body{
+    opacity: 0;
+    animation: animate-body 1.5s ease-out forwards;
+  }
+
+  @keyframes animate-body {
+    100%{
+        opacity: 1;
+    }
+  }
+  
+  
+  

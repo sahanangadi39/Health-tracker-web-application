@@ -10,6 +10,8 @@ $continuework_inscreentime = 4.3; //in hours
 $totalofficeworingtime = 7; // in hours
 $percentage = $continuework_inscreentime / $totalofficeworingtime;
 $screentime = 952 - 952 * $percentage; // in percentage
+$average_screen_time = 6; // in hours
+$break_compliance = 60; // in percentage
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +55,7 @@ $screentime = 952 - 952 * $percentage; // in percentage
 
             <h1>Hey &nbsp; <?php echo $username; ?>,</h1>
             <p>Here is how you are doing today</p>
-            
+
 
             <div id="rewards-container">
                 <?php require 'vectors/rewards.php'  ?>
@@ -145,17 +147,47 @@ $screentime = 952 - 952 * $percentage; // in percentage
     </div>
 
     <!-- Health insights middle page  -->
-        <div  id="health-insights">
-            <h3>Health Analytics</h3>
+    <div id="health-insights-container">
+
+        <h3>Health Analytics</h3>
+        <div id="health-insights">
 
 
+            <div id="graph-freq-container">
+                <select name="graph-freq" id="graph-freq">
+                    <option value="Weekely">Weekely</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Yearly">yearly</option>
+                </select>
+                <div class="metric-container">
+                    <div class="metric">Screen time</div>
+                    <div class="metric">Weight</div>
+                    <div class="metric">hydration</div>
+                    <div class="metric">Steps</div>
+                    <div class="metric">Posture</div>
+                </div>
+            </div>
+
+            <div><?php require 'vectors/rectangle-graphs.php' ?></div>
+
+            <div id="insights-text-container">
+                <h3>insights</h3>
+                <br><br>
+                <p>Screen Time Average :<?php echo $average_screen_time ?> hours</p>
+                <br>
+                <p>Break Compliance: <?php echo $break_compliance ?>% adherence to recommended breaks</p>
+                <br>
+                <p>Activity Level: Sedentary, with minimal physical activity</p>
+            </div>
         </div>
+
+    </div>
 
 
 
     <!-- blogs grid  -->
-        <h2 style="margin-left: 10vw;">Articles</h2>
-    <div id="healthblogs">    
+    <h2 style="margin-left: 10vw;">Articles</h2>
+    <div id="healthblogs">
         <img onclick="window.location.href='nutrition.php'" src="/Images/Blog/nutrition.png" alt="Nutrition">
         <img onclick="window.location.href='hydration.php'" src="/Images/Blog/hyderation.png" alt="Hyderation">
         <img onclick="window.location.href='goodposture.php'" src="/Images/Blog/goodposture.png" alt="Good posture">
@@ -165,6 +197,9 @@ $screentime = 952 - 952 * $percentage; // in percentage
     </div>
 
     <?php require 'footer.php'; ?>
+
+
+
 </body>
 
 </html>
