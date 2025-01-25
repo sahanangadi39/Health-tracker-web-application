@@ -53,7 +53,7 @@ $screentime = 952 - 952 * $percentage; // in percentage
             <p>Here is how you are doing today</p>
 
             <div id="rewards-container">
-
+                    <?php require 'vectors/rewards.php'  ?>
             </div>
 
             <div id="leftgrid">

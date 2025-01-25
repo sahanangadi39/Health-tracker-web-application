@@ -5,7 +5,7 @@
 
 .upperdashboard {
     display: flex;
-    height: 78vh;
+    height: 85vh;
     width: 100%;
     padding: 10px;
 }
@@ -109,12 +109,16 @@
 #upperleftdashboard{
     display: flex;
     padding: 30px;
-    height: fit-content;
+    height: 100vh;
     /* background-color: #3f4479; remove later */
     flex-direction: column;
     width: fit-content;
-    position: relative;
-    margin: 7vh auto 60px auto;
+    margin: 20px auto 60px auto;
+}
+
+#leftgrid svg{
+    height: 20vh;
+    width: 20vh;
 }
 
 #leftgrid{
@@ -122,9 +126,14 @@ display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 15px;
   width: 40vw;
-  margin: 50px auto;
+  height: fit-content;
+  margin: 10px auto;
   width: fit-content;
   /* position: absolute; */
+}
+
+svg text{
+    font-weight: 700;
 }
 
 .leftgridstroke{
@@ -133,7 +142,16 @@ display: grid;
     animation: leftanime 1s ease-in-out forwards;
     stroke-linecap: round;
 }
+
+#Vector_2,#Ellipse\ 6{
+    fill: white;
+}
  
+.rewards-box{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin: 30px 0px;
+}
 
 @keyframes leftanime {
     100%{
