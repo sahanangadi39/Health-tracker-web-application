@@ -21,6 +21,8 @@ $screentime = 952 - 952 * $percentage; // in percentage
     <title>Home</title>
     <link rel="stylesheet" href="/Css/navigation.css">
     <link rel="stylesheet" href="/Css/dash.css">
+    <link rel="stylesheet" href="/Css/Blog.css">
+    <link rel="stylesheet" href="/Css/home.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,14 +53,15 @@ $screentime = 952 - 952 * $percentage; // in percentage
 
             <h1>Hey &nbsp; <?php echo $username; ?>,</h1>
             <p>Here is how you are doing today</p>
+            
 
             <div id="rewards-container">
-                    <?php require 'vectors/rewards.php'  ?>
+                <?php require 'vectors/rewards.php'  ?>
             </div>
 
             <div id="leftgrid">
                 <?Php
-               require 'vectors/leftgrid-svg.php'
+                require 'vectors/leftgrid-svg.php'
 
                 ?>
             </div>
@@ -141,10 +144,25 @@ $screentime = 952 - 952 * $percentage; // in percentage
 
     </div>
 
+    <!-- Health insights middle page  -->
+        <div  id="health-insights">
+            <h3>Health Analytics</h3>
+
+
+        </div>
 
 
 
-
+    <!-- blogs grid  -->
+        <h2 style="margin-left: 10vw;">Articles</h2>
+    <div id="healthblogs">    
+        <img onclick="window.location.href='nutrition.php'" src="/Images/Blog/nutrition.png" alt="Nutrition">
+        <img onclick="window.location.href='hydration.php'" src="/Images/Blog/hyderation.png" alt="Hyderation">
+        <img onclick="window.location.href='goodposture.php'" src="/Images/Blog/goodposture.png" alt="Good posture">
+        <img onclick="window.location.href='exercise.php'" src="/Images/Blog/exercise.png" alt="Exercise">
+        <img onclick="window.location.href='hearthealth.php'" src="/Images/Blog/hearthealth.png" alt="Heart Health">
+        <img onclick="window.location.href='stressmanagement.php'" src="/Images/Blog/stressmanagement.png" alt="Stress management">
+    </div>
 
     <?php require 'footer.php'; ?>
 </body>
