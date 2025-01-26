@@ -120,7 +120,17 @@ font-weight: bold;
     background-color: #fff;
     border-radius: 8px;
     padding: 6px 10px;
-   
+    width: 200px;
+}
+.otpip{
+    display: flex;
+}
+.otpip input{
+padding: 2px 10px;
+width: 8px;
+text-align: center;
+height: auto;
+font-size: 20px;
 }
 
 

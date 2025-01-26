@@ -13,16 +13,13 @@
 // $num = mysqli_num_rows($result);
 
 // if($num == 1){
-    
+
 //     $_SESSION["email"] = $inputemail;
 //     header("location: home.php");
 //     die();
 // }elseif(isset($_POST["submitbtn"])){
 //     $invalidcredentials = true;
 // }
-    
-
-
 ?>
 
 <!DOCTYPE html>
@@ -34,9 +31,9 @@
     <title>Health is Wealth</title>
     <link rel="stylesheet" href="/Css/login.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -51,23 +48,30 @@
             <div class="formcontainer">
                 <br>
                 <h1>Sign Up</h1>
-               <br>
-               
-                <form id="emailform" action="signup.php" method="post">
-                    <input required placeholder="Mail id" type="email" name="email" id="emailip">
-                    <input required placeholder="Password" type="password" name="passphrase" id="passphraseip">
-                    <input required placeholder="confirm Password" name="confirmpassphrase" id="confirmpassphraseip" type="password">
-                    <?php 
-                        if($invalidcredentials){
-                            echo '<p style="font-size: 12px; color: red; margin-left: 10px;">Incorrect Credentials!</p>';
+                <br>
 
-                        }
+                <form id="emailform" action="otp.php" method="post">
+                    <input required placeholder="Mail id" type="email" name="email" id="emailip">
+                    <div class="otpip">
+                        <input maxlength="1" type="password"oninput="moveToNext(this)">
+                        <input maxlength="1" type="password"oninput="moveToNext(this)">
+                        <input maxlength="1" type="password"oninput="moveToNext(this)">
+                        <input maxlength="1" type="password"oninput="moveToNext(this)">
+                        <input maxlength="1" type="password"oninput="moveToNext(this)">
+                        <input maxlength="1" type="password"oninput="moveToNext(this)">
+                    </div>
+                    <?php
+                    if ($invalidcredentials) {
+                        echo '<p style="font-size: 12px; color: red; margin-left: 10px;">Incorrect Credentials!</p>';
+                    }
                     ?>
-                    <button name="submitbtn" type="submit">Sign Up</button>
+                    <button name="submitbtn" type="submit">Verify</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="/Js/otp.js"></script>
 </body>
 
 </html>
