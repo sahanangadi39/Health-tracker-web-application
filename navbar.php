@@ -4,6 +4,7 @@
     <nav>
         <ul>
             <a href="tracker.php">Health tracker</a>
+            <a href="reward.php">Rewards</a>
             <a href="ai.php">AI assistant</a>
             <a href="devices.php">Devices</a>
             <a href="Blog.php">Blog</a>
