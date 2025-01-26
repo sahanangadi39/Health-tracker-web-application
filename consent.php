@@ -77,7 +77,7 @@
                 </li>
             </ol>
                     <div class="consentbtn">
-                        <button id="consent-cancel-btn">Cancel</button>
+                        <button style=" background-color: #3A49DAB2;">Cancel</button>
                         <button>Allow</button>
                     </div>
         </div>

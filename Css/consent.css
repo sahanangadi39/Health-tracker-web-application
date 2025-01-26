@@ -33,7 +33,7 @@
     display: flex;
     margin: 40px 0px 0px  0px;
 }
-.consentbtn button{
+.consentbtn button, #cancel button{
     background-color: #3A49DA;
     padding: 0.4vw 2.5vw;
     margin: 5px 40px;
@@ -44,6 +44,19 @@
     cursor: pointer;
     font-weight: 700;
 }
-#consent-cancel-btn{
-    background-color: #3A49DAB2;
+
+#cancel-container{
+    height: 55vh;
+    width: 55vw;
 }
+#cancel{
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+#cancel button{
+    margin-top: 12vh;
+}
+
+
