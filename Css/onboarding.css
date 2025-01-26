@@ -6,11 +6,20 @@
 #section1 button,#section1 select,#section1 option{
     background-color: white;
 }
-
+.login{
+    padding: 30px 50px 10px 10px;
+}
 .login h3{
     font-weight: 700;
     font-size: 25px;
     color: #3D0156;
+}
+
+.login img{
+    filter: invert(100%);
+    width: auto;
+    height: 1.3vw;
+    margin: 10px -20px 10px auto;
 }
 
 #section1 *{

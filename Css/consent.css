@@ -1,0 +1,49 @@
+*{
+    font-family: "open-sans",serif;
+}
+
+.login{
+    width: 55vw;
+    padding: 50px 50px 15px 50px;
+
+}
+.login h3{
+    margin-bottom: 25px;
+    /* font-size: 24px; */
+    font-size: 1.5vw;
+}
+.consent-container{
+    padding: 4px 16px;
+    margin: 10px 20px;
+    font-size: 0.59vw;
+}
+.login hr{
+    height: 1.8px;
+}
+
+.consent-container ul li{
+    list-style: disc;
+    margin-left: 20px;
+}
+.consent-container ol li{
+    margin-left: 15px;
+}
+
+.consentbtn{
+    display: flex;
+    margin: 40px 0px 0px  0px;
+}
+.consentbtn button{
+    background-color: #3A49DA;
+    padding: 0.4vw 2.5vw;
+    margin: 5px 40px;
+    margin-left: 0px;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.8vw;
+    cursor: pointer;
+    font-weight: 700;
+}
+#consent-cancel-btn{
+    background-color: #3A49DAB2;
+}

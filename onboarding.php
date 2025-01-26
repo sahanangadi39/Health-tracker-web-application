@@ -20,6 +20,7 @@
 
 <body>
     <div class="login">
+        <img src="/Images/logo.png" alt="Fitforce">
         <h3>Lets get you started</h3>
         <form action="" method="post">
             <div id="section1">

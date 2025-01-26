@@ -49,7 +49,7 @@
 /* graph value manipulation  */
 
 .rectangle-progress{
-    height: 30px;
+    height: 40px;
     animation: rectangle-animation 1s ease-in-out forwards;
 }
 
