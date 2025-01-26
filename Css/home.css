@@ -45,6 +45,20 @@
 
 }
 
+
+/* graph value manipulation  */
+
+.rectangle-progress{
+    height: 30px;
+    animation: rectangle-animation 1s ease-in-out forwards;
+}
+
+@keyframes rectangle-animation {
+    100%{
+        height: 389px;
+    }
+}
+
 /* insights text container  */
 
 #insights-text-container{
