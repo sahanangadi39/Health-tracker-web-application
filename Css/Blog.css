@@ -1,59 +1,128 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 
 }
 
 /* upper section  */
 #preventationcontainer {
-    width: 100%;
-    /* height: fit-content; */
-    background-color: #F4F5F8;
-    display: flex;
-    justify-content: center;
-    padding: 30px 0px;
+  width: 100%;
+  /* height: fit-content; */
+  background-color: #F4F5F8;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
 }
 
 #preventationcontainer .blogleftimage {
-    display: flex;
-    scale: 0.9;
-    margin: auto auto auto 93px;
+  display: flex;
+  scale: 0.9;
+  margin: auto auto auto 93px;
 }
-.blogleftimage img{
-    height: auto;
-    width: 100%;
+
+.blogleftimage img {
+  height: auto;
+  width: 100%;
 }
 
 #preventationcontainer .blogrightcontent {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    font-family: "Montserrat", serif !important;
-    margin: auto;
-    font-size: 18px;
-    font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  font-family: "Montserrat", serif !important;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 #preventationcontainer .blogrightcontent h2 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 /* blog link section  */
 
 
 
-#healthblogs{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,auto);
-    gap: 60px;
-    scale: 0.8;
-    row-gap: 100px;
+#healthblogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 60px;
+  scale: 0.8;
+  row-gap: 100px;
 }
 
 #healthblogs img {
-    width: 100%; 
-    height: auto; 
-    cursor: pointer;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+
+/* Blog hover and image container */
+.blogimagecontainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.blogimagetext {
+  background-color: #90D0FE;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 25px 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.blogimagetext h2 {
+  margin-left: 20px;
+}
+
+.showonhovercontainer {
+  font-family: "open-sans", serif;
+  font-size: 1.2vw;
+  overflow: hidden;
+  padding: 0px;
+  height: 0px;
+  animation: hide 0.5s ease-in forwards;
+
+}
+
+.blogimagecontainer:hover .showonhovercontainer {
+  animation: show 0.5s ease-out forwards;
+  padding: 20px;
+
+}
+
+@keyframes show {
+  from {
+    height: 0px;
   }
+
+  to {
+    height: 120px;
+  }
+
+}
+
+@keyframes hide {
+  from {
+    height: 120px;
+    padding: 20px;
+  }
+
+  to {
+    height: 0px;
+  }
+
+}
+
+
+
+.showonhovercontainer p {
+  color: blue;
+  font-weight: 500;
+  margin-top: 50px;
+}

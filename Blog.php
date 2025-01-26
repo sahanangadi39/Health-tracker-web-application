@@ -41,17 +41,86 @@
 
 
     <div id="healthblogs">
-        <img onclick="window.location.href='nutrition.php'" src="/Images/Blog/nutrition.png" alt="Nutrition">
-        <img onclick="window.location.href='hydration.php'" src="/Images/Blog/hyderation.png" alt="Hyderation">
-        <img onclick="window.location.href='goodposture.php'" src="/Images/Blog/goodposture.png" alt="Good posture">
-        <img onclick="window.location.href='exercise.php'" src="/Images/Blog/exercise.png" alt="Exercise">
-        <img onclick="window.location.href='hearthealth.php'" src="/Images/Blog/hearthealth.png" alt="Heart Health">
-        <img onclick="window.location.href='stressmanagement.php'" src="/Images/Blog/stressmanagement.png" alt="Stress management">
+
+        <div class="blogimagecontainer">
+            <img onclick="window.location.href='nutrition.php'" src="/Images/Blog/nutrition.png" alt="Nutrition">
+            <div class="blogimagetext">
+                <h2>Nutrition</h2>
+                <div onclick="window.location.href='nutrition.php'" class="showonhovercontainer">
+                    Fuel you body Right: Discover how balanced, nutrient-rich meals bootst energy.
+                    <br>
+                    <p>Learn more ></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="blogimagecontainer">
+            <img onclick="window.location.href='hydration.php'" src="/Images/Blog/hydration.png" alt="Hydration">
+            <div class="blogimagetext">
+                <h2>Hydration</h2>
+                <div onclick="window.location.href='hydration.php'" class="showonhovercontainer">
+                   Stay Refreshed: Learn the importance of proper hydration.
+                    <br>
+                    <p>Learn more ></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="blogimagecontainer">
+            <img onclick="window.location.href='goodposture.php'" src="/Images/Blog/goodposture.png" alt="Good posture">
+            <div class="blogimagetext">
+                <h2>Good posture</h2>
+                <div onclick="window.location.href='goodposture.php'" class="showonhovercontainer">
+                    Sit straight, Feel Strong: Maintaining good posture.
+                    <br>
+                    <p>Learn more ></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="blogimagecontainer">
+            <img onclick="window.location.href='exercise.php'" src="/Images/Blog/exercise.png" alt="Exercise">
+            <div class="blogimagetext">
+                <h2>Exercise</h2>
+                <div onclick="window.location.href='exercise.php'" class="showonhovercontainer">
+                    Move to Thrive: Regular physical activities strengthens your body.
+                    <br>
+                    <p>Learn more ></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="blogimagecontainer">
+            <img onclick="window.location.href='hearthealth.php'" src="/Images/Blog/hearthealth.png" alt="Heart Health">
+            <div class="blogimagetext">
+                <h2>Heart Health</h2>
+                <div onclick="window.location.href='hearthealth.php'" class="showonhovercontainer">
+                    Care for you Heart: Simple habits can make a big difference.
+                    <br>
+                    <p>Learn more ></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="blogimagecontainer">
+            <img onclick="window.location.href='stressmanagement.php'" src="/Images/Blog/stressmanagement.png" alt="Stress management">
+            <div class="blogimagetext">
+                <h2>Stress Management</h2>
+                <div onclick="window.location.href='stressmanagement.php'" class="showonhovercontainer">
+                    Find you Calm: Master stress management techniques.
+                    <br>
+                    <p>Learn more ></p>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-<?php
+    <?php
     require 'footer.php';
-?>
+    ?>
 </body>
 
 
