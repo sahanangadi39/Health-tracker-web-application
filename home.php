@@ -5,7 +5,7 @@
 //         die();
 //     }
 
-$username = "Demo user";
+$username = "Sahan";
 $continuework_inscreentime = 4.3; //in hours
 $totalofficeworingtime = 7; // in hours
 $percentage = $continuework_inscreentime / $totalofficeworingtime;

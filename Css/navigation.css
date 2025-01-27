@@ -46,3 +46,48 @@ nav a{
     margin: 10px;
     cursor: pointer;
 }
+
+/* Notification panel  */
+
+#notification-panel{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background-color: rgba(255, 228, 196, 0.562); */
+    position: fixed;
+    left: 80vw;
+    overflow: hidden;
+    z-index: 12;
+   width: 20vw;
+   transform: translateX(20vw);
+}
+
+#notification-panel div{
+    padding: 15px 25px;
+    background-color: #FFF;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
+    width: 15vw;
+
+}
+
+ @keyframes notificationopen {
+    0%{
+        transform: translatex(20vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+ }
+
+
+ @keyframes notificationclose {
+    0%{
+        transform: translateX(0vw);
+    }
+
+    100%{
+        transform: translateX(20vw);
+    }
+ }

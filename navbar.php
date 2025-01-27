@@ -1,4 +1,3 @@
-
 <header>
     <div onclick="document.location.href='home.php'" class="logo"><img style="filter: invert(100%);" src="/Images/Group 1000005572.png" alt="logo"></div>
     <nav>
@@ -13,8 +12,48 @@
     </nav>
     <div class="accountsection">
         <img src="/Images//help.png" alt="Help">
-        <img src="/Images/notification.png" alt="Notifications">
+        <img onclick="notification()" src="/Images/notification.png" alt="Notifications">
         <img onclick="window.location.href='profile.php'" src="/Images/account.png" alt="Account">
     </div>
 
 </header>
+
+<div id="notification-panel">
+
+    <div>
+        <ul>
+            <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, numquam 
+            reprehenderit autem dolores facilis architecto laudantium tempore aperiam
+             officia. Ea similique necessitatibus veniam cupiditate corrupti itaque maiores
+              mollitia dolorum quam sunt, nam fugiat, neque quaerat expedita pariatur reprehenderit
+               earum iure eveniet nobis unde laboriosam temporibus? Quis accusantium numquam ipsa nemo!
+
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <ul>
+            <li>
+            This is a notification container 1.
+
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <ul>
+            <li>
+            This is a notification container 1.
+
+            </li>
+        </ul>
+    </div>
+
+    
+   
+
+</div>
+
+<script src="/Js/notification.js"></script>
