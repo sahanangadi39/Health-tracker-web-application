@@ -1,13 +1,21 @@
 <?php
-$name = "demo Name User";
-$age = 24;
-$sex = "Female";
-$maritalstatus = "Married";
-$height = 100;
-$weight = 60;
+session_start();
+require 'databaseconnection.php';
+$email = $_SESSION['email'];
+$sqlquery = "select * from users where email = '$email'";
+$sqlobjectdata = $connection->query($sqlquery);
+$data = $sqlobjectdata->fetch_assoc();
 
-$healthconditoinstatus = "Excellent";
-$disabilitystatus = "None";
+
+$name = $data['name'];
+$age = $data['age'];
+$sex = $data['sex'];
+$maritalstatus = $data['maratialStatus'];
+$height = $data['height'];
+$weight = $data['weight'];
+
+$healthconditoinstatus = $data['healthCondition'];
+$disabilitystatus = $data['disability'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

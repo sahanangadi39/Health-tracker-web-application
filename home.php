@@ -1,12 +1,20 @@
 <?php
-//    session_start();
+   session_start();
 //     if((!isset($_SESSION["email"]))){
 //         header("location: login.php");
 //         die();
 //     }
 
-$username = "Demo user";
-$continuework_inscreentime = 4.8; //in hours
+// database sql query 
+require 'databaseconnection.php';
+$email = $_SESSION['email'];
+$sqlquery = "select * from users where email = '$email'";
+$sqlobjectdata = $connection->query($sqlquery);
+$data = $sqlobjectdata->fetch_assoc();
+
+
+$username = $data['name'];
+$continuework_inscreentime = $data['screentime']; //in hours
 $totalofficeworingtime = 7; // in hours
 $percentage = $continuework_inscreentime / $totalofficeworingtime;
 $screentime = 952 - 952 * $percentage; // in percentage
