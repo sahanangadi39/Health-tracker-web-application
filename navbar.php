@@ -23,11 +23,7 @@
     <div>
         <ul>
             <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, numquam 
-            reprehenderit autem dolores facilis architecto laudantium tempore aperiam
-             officia. Ea similique necessitatibus veniam cupiditate corrupti itaque maiores
-              mollitia dolorum quam sunt, nam fugiat, neque quaerat expedita pariatur reprehenderit
-               earum iure eveniet nobis unde laboriosam temporibus? Quis accusantium numquam ipsa nemo!
+                Don't forget to hydrate! Aim for 8 glasses of water today.
 
             </li>
         </ul>
@@ -36,7 +32,7 @@
     <div>
         <ul>
             <li>
-            This is a notification container 1.
+                Take a 5-minute stretch break to improve your posture and focus.
 
             </li>
         </ul>
@@ -45,14 +41,21 @@
     <div>
         <ul>
             <li>
-            This is a notification container 1.
-
+                Great job! You achieved 80% of your health goals this week.
             </li>
         </ul>
     </div>
 
-    
-   
+    <div>
+        <ul>
+            <li>
+                New insights available: Check your sleep and activity trends.
+            </li>
+        </ul>
+    </div>
+
+
+
 
 </div>
 
