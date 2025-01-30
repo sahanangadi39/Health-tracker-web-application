@@ -1,5 +1,24 @@
 <?php
-// require '/dbconnect/connect.php';
+session_start();
+require 'databaseconnection.php';
+$session_email = $_SESSION['email'];
+$name = $_POST['name'];
+$age = $_POST['age'];
+$sex = $_POST['sex'];
+$maratialstatus = $_POST['maratial_status'];
+$height = $_POST['Height'];
+$weight = $_POST['Weight'];
+$healthcondition = $_POST['healthCondition'];
+$disability = $_POST['Disability'];
+
+$sqlquery = "update users set name = '$name', sex = '$sex',age = '$age', maratialStatus = '$maratialstatus', healthCondition = '$healthcondition', disability = '$disability', height = '$height', weight = '$weight' where email = '$session_email';";
+if($name != '' && $age != '' && $sex != '' && $maratialstatus != '' && $height !='' ){
+    $connection->query($sqlquery);
+    header("location: home.php");
+    exit;
+}
+
+
 ?>
 
 <!DOCTYPE html>

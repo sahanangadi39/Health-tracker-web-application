@@ -1,28 +1,29 @@
 <?php
-// session_start();
-// require '/dbconnect/connect.php';
-// $connection = mysqli_connect($host,$username,$passphrase,$database);
-// if(!$connection){
-//     die("Error!" . mysqli_connect_error());
-// }
-// $inputemail = process($_POST["email"]);
-// $inputpassword = process($_POST["passphrase"]);
+   session_start();
+require 'databaseconnection.php';
+$email = $_POST['email'];
+$password = $_POST['passphrase'];
+$confirmpassword = $_POST['confirmpassphrase'];
 
-// $sqlquery = "select * from users where email = '$inputemail' AND password = '$inputpassword'";
-// $result = mysqli_query($connection,$sqlquery);
-// $num = mysqli_num_rows($result);
+$accountalreadyexist = true;
+$isconfirmpasswordequal = true;
+if($password != $confirmpassword){
+    $isconfirmpasswordequal = false;
+}
+$sqlquery = "select * from users where email = '$email'";
+$result = $connection->query($sqlquery);
 
-// if($num == 1){
-    
-//     $_SESSION["email"] = $inputemail;
-//     header("location: home.php");
-//     die();
-// }elseif(isset($_POST["submitbtn"])){
-//     $invalidcredentials = true;
-// }
-    
+if(!mysqli_num_rows($result)){
+    $accountalreadyexist = false;
+}
 
-
+if(!$accountalreadyexist && $isconfirmpasswordequal && $email != '' && $password != ''){
+    $signupquery = "insert into users(email,password) values('$email','$password')";
+    $connection->query($signupquery);
+    $_SESSION['email'] = $email;
+    header("location: onboarding.php");
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +42,7 @@
 
 <body>
     <div class="login">
-        <a href="login.php.php">Already have an account? <b>Login</b></a>
+        <a href="login.php">Already have an account? <b>Login</b></a>
         <div class="logoformcontainer">
             <div class="logocontainer">
                 <img style="margin: 240px auto 0px 20px;" height="20px" width="fit-content" src="/Images/Group 1000005572.png" alt="logo">
@@ -58,10 +59,10 @@
                     <input required placeholder="Password" type="password" name="passphrase" id="passphraseip">
                     <input required placeholder="confirm Password" name="confirmpassphrase" id="confirmpassphraseip" type="password">
                     <?php 
-                        if($invalidcredentials){
-                            echo '<p style="font-size: 12px; color: red; margin-left: 10px;">Incorrect Credentials!</p>';
 
-                        }
+                       echo (!$isconfirmpasswordequal && isset($_POST['submitbtn']))?'<p style="font-size: 12px; color: red; margin-left: 10px;">Password and Confirm password does not match</p>':'';
+                        
+                        echo ($accountalreadyexist && isset($_POST['submitbtn']))? '<p style="font-size: 12px; color: red; margin-left: 10px;">Account already exists please login to continue</p>':'';
                     ?>
                     <button name="submitbtn" type="submit">Sign Up</button>
                 </form>
