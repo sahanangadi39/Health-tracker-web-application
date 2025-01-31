@@ -1,7 +1,10 @@
 <?php
    session_start();
+   if(!isset($_SESSION['otpverified'])){
+        header("location: otp.php");
+   }
 require 'databaseconnection.php';
-$email = $_POST['email'];
+$email = $_SESSION['email'];
 $password = $_POST['passphrase'];
 $confirmpassword = $_POST['confirmpassphrase'];
 
@@ -55,7 +58,11 @@ if(!$accountalreadyexist && $isconfirmpasswordequal && $email != '' && $password
                <br>
                
                 <form id="emailform" action="signup.php" method="post">
-                    <input required placeholder="Mail id" type="email" name="email" id="emailip">
+                    <!-- <input required placeholder="Mail id" type="email" name="email" id="emailip"> -->
+                     <?php
+                        echo '<div id="emaildisplay">' . $_SESSION['email'] . '</div>';
+                     ?>
+
                     <input required placeholder="Password" type="password" name="passphrase" id="passphraseip">
                     <input required placeholder="confirm Password" name="confirmpassphrase" id="confirmpassphraseip" type="password">
                     <?php 

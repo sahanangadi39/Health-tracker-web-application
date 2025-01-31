@@ -133,9 +133,19 @@ height: auto;
 font-size: 20px;
 }
 
+.otp
+
 
 input::placeholder{
     color: rgb(0, 0, 0);
     opacity: 1;
     font-weight: 400;
+}
+
+#emaildisplay{
+    color: rgba(0, 0, 0, 0.651);
+    font-weight: 500;
+    background-color: white;
+    padding: 8px 4px 8px 4px;
+    border-radius: 8px;
 }
