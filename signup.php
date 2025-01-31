@@ -47,7 +47,7 @@ if(!$accountalreadyexist && $isconfirmpasswordequal && $email != '' && $password
 
 <body>
     <div class="login">
-        <a href="login.php">Already have an account? <b>Login</b></a>
+        <!-- <a href="login.php">Already have an account? <b>Login</b></a> -->
         <div class="logoformcontainer">
             <div class="logocontainer">
                 <img style="margin: 240px auto 0px 20px;" height="20px" width="fit-content" src="/Images/Group 1000005572.png" alt="logo">

@@ -93,7 +93,7 @@ if (isset($_POST['digit1']) && isset($_POST['digit2']) && isset($_POST['digit3']
 
 <body>
     <div class="login">
-        <a href="login.php.php">Already have an account? <b>Login</b></a>
+        <a href="login.php">Already have an account? <b>Login</b></a>
         <div class="logoformcontainer">
             <div class="logocontainer">
                 <img style="margin: 240px auto 0px 20px;" height="20px" width="fit-content"
