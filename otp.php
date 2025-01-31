@@ -76,8 +76,8 @@ if (isset($_POST['digit1']) && isset($_POST['digit2']) && isset($_POST['digit3']
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/Images/favicon.svg" type="image/x-icon">
     <style>
         .otpip {
             <?php
