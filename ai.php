@@ -50,4 +50,20 @@ echo $response_data["response"];
 </body>
 </html>
 
+    <?php
+    require 'navbar.php';
+    ?>
+    <main class="chat-container ">
+        <aside class="side-icon">
+            <img src="Images/ai page.png" alt="ai-bot icon" class="chat-icon">
+            <img src="Images/user-img.svg" alt="user icon" class="chat-icon">
+        </aside>
+        
+
+        
+
+    </main>
+
+
+</body>
 
