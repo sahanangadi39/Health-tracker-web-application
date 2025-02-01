@@ -97,24 +97,24 @@ if($name != '' && $age != '' && $sex != '' && $maratialstatus != '' && $height !
 
             <p>Health topics you are interested</p>
             <div id="section3">
-                <button>Nutrition</button>
-                <button>Exercise</button>
-                <button>Posture</button>
-                <button>Hydration</button>
-                <button>Stress</button>
-                <button>Anxiety</button>
-                <button>Mental Health</button>
-                <button>Heart health</button>
-                <button>Gut Health</button>
-                <button>Eye Health</button>
-                <button>Spine</button>
-                <button>Infection</button>
-                <button>Food</button>
-                <button>Weight Loss</button>
-                <button>Weight Gain</button>
-                <button>Skin</button>
-                <button>Hair</button>
-                <button>Dental</button>
+                <button type="button">Nutrition</button>
+                <button type="button">Exercise</button>
+                <button type="button">Posture</button>
+                <button type="button">Hydration</button>
+                <button type="button">Stress</button>
+                <button type="button">Anxiety</button>
+                <button type="button">Mental Health</button>
+                <button type="button">Heart health</button>
+                <button type="button">Gut Health</button>
+                <button type="button">Eye Health</button>
+                <button type="button">Spine</button>
+                <button type="button">Infection</button>
+                <button type="button">Food</button>
+                <button type="button">Weight Loss</button>
+                <button type="button">Weight Gain</button>
+                <button type="button">Skin</button>
+                <button type="button">Hair</button>
+                <button type="button">Dental</button>
             </div>
             <button class="submitbtn" type="submit">Launch</button>
         </form>

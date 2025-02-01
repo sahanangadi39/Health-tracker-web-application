@@ -11,7 +11,7 @@
         </ul>
     </nav>
     <div class="accountsection">
-        <img src="/Images//help.png" alt="Help">
+        <img onclick="window.location.href='help.php'" src="/Images//help.png" alt="Help">
         <img onclick="notification()" src="/Images/notification.png" alt="Notifications">
         <img onclick="window.location.href='profile.php'" src="/Images/account.png" alt="Account">
     </div>
