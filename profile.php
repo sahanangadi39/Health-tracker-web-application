@@ -103,8 +103,11 @@ $disabilitystatus = $data['disability'];
                 <div>Hair</div>
                 <div>Dental</div>
             </div>
+            <button onclick="window.location.href='logout.php'" id="logout">
+            Logout
+        </button>
         </div>
-
+        
     </div>
 
     <?php

@@ -88,3 +88,11 @@ hr{
     border-radius: 6px;
     text-align: center;
 }
+
+#logout{
+    padding: 0.8vh 2.5vw;
+    background-color: #0C5CAA;
+    color: aliceblue;
+    border-radius: 8px;
+    margin: 3vh 0px
+}

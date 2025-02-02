@@ -1,9 +1,9 @@
 <?php
    session_start();
-//     if((!isset($_SESSION["email"]))){
-//         header("location: login.php");
-//         die();
-//     }
+    // if((!isset($_SESSION["email"]))){
+    //     header("location: login.php");
+    //     die();
+    // }
 
 // database sql query 
 require 'databaseconnection.php';
