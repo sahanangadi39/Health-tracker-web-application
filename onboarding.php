@@ -97,24 +97,24 @@ if($name != '' && $age != '' && $sex != '' && $maratialstatus != '' && $height !
 
             <p>Health topics you are interested</p>
             <div id="section3">
-                <button type="button">Nutrition</button>
-                <button type="button">Exercise</button>
-                <button type="button">Posture</button>
-                <button type="button">Hydration</button>
-                <button type="button">Stress</button>
-                <button type="button">Anxiety</button>
-                <button type="button">Mental Health</button>
-                <button type="button">Heart health</button>
-                <button type="button">Gut Health</button>
-                <button type="button">Eye Health</button>
-                <button type="button">Spine</button>
-                <button type="button">Infection</button>
-                <button type="button">Food</button>
-                <button type="button">Weight Loss</button>
-                <button type="button">Weight Gain</button>
-                <button type="button">Skin</button>
-                <button type="button">Hair</button>
-                <button type="button">Dental</button>
+                <button class="interestedtopics" type="button">Exercise</button>
+                <button class="interestedtopics" type="button">Nutrition</button>
+                <button class="interestedtopics" type="button">Posture</button>
+                <button class="interestedtopics" type="button">Hydration</button>
+                <button class="interestedtopics" type="button">Stress</button>
+                <button class="interestedtopics" type="button">Anxiety</button>
+                <button class="interestedtopics" type="button">Mental Health</button>
+                <button class="interestedtopics" type="button">Heart health</button>
+                <button class="interestedtopics" type="button">Gut Health</button>
+                <button class="interestedtopics" type="button">Eye Health</button>
+                <button class="interestedtopics" type="button">Spine</button>
+                <button class="interestedtopics" type="button">Infection</button>
+                <button class="interestedtopics" type="button">Food</button>
+                <button class="interestedtopics" type="button">Weight Loss</button>
+                <button class="interestedtopics" type="button">Weight Gain</button>
+                <button class="interestedtopics" type="button">Skin</button>
+                <button class="interestedtopics" type="button">Hair</button>
+                <button class="interestedtopics" type="button">Dental</button>
             </div>
             <button class="submitbtn" type="submit">Launch</button>
         </form>
@@ -122,6 +122,7 @@ if($name != '' && $age != '' && $sex != '' && $maratialstatus != '' && $height !
 
 
     </div>
+    <script src="/Js/onboarding.js"></script>
 </body>
 
 </html>

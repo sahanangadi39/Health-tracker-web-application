@@ -64,11 +64,9 @@ grid-template-columns: repeat(6, 125px);
 margin: 10px;
 font-weight: 400;
 }
-
 #section3 button{
     padding: 8px;
     margin: 10px;
-    background-color: white;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -105,4 +103,14 @@ input[type=number] {
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
+}
+
+/* Interested topics */
+.interestedtopics{
+    background-color: #ffffff46;
+}
+
+.interestedtopicsselected{
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
 }

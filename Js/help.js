@@ -1,7 +1,5 @@
 let open = true;
 
-
-
 const boxes = document.querySelectorAll(".faqs");
 
 boxes.forEach((box, index) => {
