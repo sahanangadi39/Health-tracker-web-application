@@ -198,6 +198,7 @@ if(isset($_POST['message'])){
 
 
     <?php require 'footer.php'; ?>
+    <script src="/Js/ai.js"></script>
 </body>
 
 </html>

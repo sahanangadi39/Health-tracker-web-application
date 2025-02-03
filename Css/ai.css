@@ -20,7 +20,7 @@
 #ai-chat-up {
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow-y: scroll;
     width: 45vw;
     height: 55vh;
     padding: 25px;
