@@ -9,8 +9,19 @@
     margin: auto;
 }
 
-#ai-logo img {
+#ai-logo #aiuseravatar{
+    height: 10vw;
+    width: fit-content;
+    position: absolute;
+}
+
+#ai-logo img,#ai-logo svg {
     margin: 1.5vh 0vw 1.5vh 2vw;
+}
+
+#ai-logo svg image{
+    height: 205px;
+    /* width: 200px; */
 }
 
 #ai-chat {

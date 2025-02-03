@@ -21,24 +21,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // $_SESSION['chatbotmessages'] = '';
-if(isset($_POST['message'])){
+if (isset($_POST['message'])) {
     $_SESSION['chatbotmessages'] = $_SESSION['chatbotmessages'] .  '<div class="user-response-container">
     <div class="user-response">
       <div class="user-response-text">'
-            . $user_message .
-            '</div>
+        . $user_message .
+        '</div>
       <img src="/Images/ai/user-image.png">
  </div>
 <p> ' . date("h:i a") . '</p>
 </div>' .
 
-            '<div class="bot-response-container">
+        '<div class="bot-response-container">
 <div class="bot-response">
 <img src="/Images/ai/bot-image.png">
 <div class="bot-response-text">'
-            . $response_data["response"].
+        . $response_data["response"] .
 
-            '</div>
+        '</div>
 </div>
 <p>' . date("h:i a") . '</p>
 </div>';
@@ -66,7 +66,16 @@ if(isset($_POST['message'])){
 
         <div id="ai-logo">
             <img src="/Images/ai page.png" alt="Bot">
-            <img src="/Images/user-img.svg" alt="user image">
+            <!-- <img src="/Images/user-img.svg" alt="user image"> -->
+            <svg width="295" height="295" viewBox="0 0 295 295" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Group 1000005574">
+                    <circle id="Ellipse 43" cx="147.34" cy="147.341" r="129.985" stroke="#82E8A8" stroke-width="3" />
+                    <circle id="Ellipse 44" cx="147.34" cy="147.34" r="146.84" stroke="#82E8A8" />
+                    <circle id="Ellipse 45" cx="147.34" cy="147.34" r="139.365" stroke="#82E8A8" />
+                    <circle id="Ellipse 39" cx="147.34" cy="148.659" r="112.577" stroke="#82E8A8" stroke-width="11" />
+                    <image x="44" y = "47" href="/Images/useravatar.png" />
+                </g>
+            </svg>
         </div>
 
 
@@ -202,4 +211,3 @@ if(isset($_POST['message'])){
 </body>
 
 </html>
-
