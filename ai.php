@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_message = $_POST["message"];
     $url = "http://127.0.0.1:5000/chat";
@@ -18,6 +19,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $response_data = json_decode($response, true);
 }
+
+// $_SESSION['chatbotmessages'] = '';
+if(isset($_POST['message'])){
+    $_SESSION['chatbotmessages'] = $_SESSION['chatbotmessages'] .  '<div class="user-response-container">
+    <div class="user-response">
+      <div class="user-response-text">'
+            . $user_message .
+            '</div>
+      <img src="/Images/ai/user-image.png">
+ </div>
+<p> ' . date("h:i a") . '</p>
+</div>' .
+
+            '<div class="bot-response-container">
+<div class="bot-response">
+<img src="/Images/ai/bot-image.png">
+<div class="bot-response-text">'
+            . $response_data["response"].
+
+            '</div>
+</div>
+<p>' . date("h:i a") . '</p>
+</div>';
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -45,11 +71,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         <div id="ai-chat">
+
             <div id="ai-chat-up">
+
                 <?php
-                echo $response_data["response"];
+                echo $_SESSION['chatbotmessages'];
                 ?>
+
             </div>
+
             <div id="ai-chat-down">
 
                 <!-- call icon  -->

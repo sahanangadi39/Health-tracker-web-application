@@ -1,22 +1,23 @@
-#ai{
+#ai {
     display: flex;
     margin: 12vh;
 }
 
-#ai-logo{
+#ai-logo {
     display: flex;
     flex-direction: column;
     margin: auto;
 }
-#ai-logo img{
+
+#ai-logo img {
     margin: 1.5vh 0vw 1.5vh 2vw;
 }
 
-#ai-chat{
+#ai-chat {
     margin: 0px auto;
 }
 
-#ai-chat-up{
+#ai-chat-up {
     display: flex;
     flex-direction: column;
     overflow: scroll;
@@ -27,7 +28,7 @@
     border-radius: 16px;
 }
 
-#ai-chat-down{
+#ai-chat-down {
     display: flex;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
@@ -36,7 +37,7 @@
     align-items: center;
 }
 
-form input{
+form input {
     margin: auto;
     background-color: #F4F5F8;
     width: 22vw;
@@ -46,12 +47,83 @@ form input{
     padding: 6px 20px;
 }
 
-form button{
-background-color: transparent;
+form button {
+    background-color: transparent;
 }
 
-form{
+form {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* user response section  */
+
+.user-response-container {
+    margin: 30px 0px 30px auto;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+
+}
+
+.user-response {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    /* margin: 0px 0px 0px auto; */
+}
+
+.user-response img {
+    height: fit-content;
+    margin: 20px 0px;
+}
+
+.user-response-text {
+    width: 20vw;
+    margin: 0px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 1.5vh 1.5vw;
+}
+
+.user-response-container p {
+    margin: 8px 80px 0px auto;
+    padding: 0px;
+}
+
+
+
+/* bot response  */
+.bot-response-container {
+    /* margin: 0px 0px 0px auto; */
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+
+}
+
+.bot-response {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    /* margin: 0px 0px 0px auto; */
+}
+
+.bot-response img {
+    height: fit-content;
+    margin: 20px 0px;
+}
+
+.bot-response-text {
+    width: 20vw;
+    margin: 0px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 1.5vh 1.5vw;
+}
+
+.bot-response-container p {
+    margin: 8px 80px 0px 80px;
+    padding: 0px;
 }
