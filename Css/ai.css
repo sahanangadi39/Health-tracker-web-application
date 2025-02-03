@@ -1,0 +1,57 @@
+#ai{
+    display: flex;
+    margin: 12vh;
+}
+
+#ai-logo{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#ai-logo img{
+    margin: 1.5vh 0vw 1.5vh 2vw;
+}
+
+#ai-chat{
+    margin: 0px auto;
+}
+
+#ai-chat-up{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 45vw;
+    height: 55vh;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+}
+
+#ai-chat-down{
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin: 3vh 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    margin: auto;
+    background-color: #F4F5F8;
+    width: 22vw;
+    margin: auto 1vw;
+    height: 30px;
+    border-radius: 8px;
+    padding: 6px 20px;
+}
+
+form button{
+background-color: transparent;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
