@@ -202,13 +202,3 @@ if(isset($_POST['message'])){
 
 </html>
 
-
-
-<!-- <h1>Chat with Fitforce</h1>
-
-    <form method="post">
-        <input type="text" name="message" placeholder="Type your message..." required>
-        <input type="submit" value="Send">
-    </form>
-
-    <br> -->
