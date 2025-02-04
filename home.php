@@ -1,9 +1,9 @@
 <?php
-   session_start();
-    // if((!isset($_SESSION["email"]))){
-    //     header("location: login.php");
-    //     die();
-    // }
+session_start();
+// if((!isset($_SESSION["email"]))){
+//     header("location: login.php");
+//     die();
+// }
 
 // database sql query 
 require 'databaseconnection.php';
@@ -14,12 +14,23 @@ $data = $sqlobjectdata->fetch_assoc();
 
 
 $username = $data['name'];
+
+// for screen time
 $continuework_inscreentime = $data['screentime']; //in hours
 $totalofficeworingtime = 7; // in hours
 $percentage = $continuework_inscreentime / $totalofficeworingtime;
 $screentime = 952 - 952 * $percentage; // in percentage
 $average_screen_time = 6; // in hours
 $break_compliance = 60; // in percentage
+
+
+// variables for the left graphs
+$hyderate = 8;
+$posture = 20;
+$break = 20;
+$sleep = 8;
+$exercise = 80;
+$steps = 3000;
 ?>
 
 <!DOCTYPE html>
@@ -148,7 +159,7 @@ $break_compliance = 60; // in percentage
 
             <!-- track your health button  -->
 
-            <button>
+            <button style="cursor: pointer;" onclick="window.location.href='tracker.php'">
                 Track your Health
             </button>
 
@@ -217,7 +228,7 @@ $break_compliance = 60; // in percentage
             <div class="blogimagetext">
                 <h2>Hydration</h2>
                 <div onclick="window.location.href='hydration.php'" class="showonhovercontainer">
-                   Stay Refreshed: Learn the importance of proper hydration.
+                    Stay Refreshed: Learn the importance of proper hydration.
                     <br>
                     <p>Learn more ></p>
                 </div>
