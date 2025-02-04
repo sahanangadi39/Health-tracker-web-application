@@ -82,7 +82,6 @@ if (isset($_POST['message'])) {
         <div id="ai-chat">
 
             <div id="ai-chat-up">
-
                 <?php
                 echo $_SESSION['chatbotmessages'];
                 ?>

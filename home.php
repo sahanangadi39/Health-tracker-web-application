@@ -86,7 +86,7 @@ $break_compliance = 60; // in percentage
         <div id="upperrightdashboard">
 
             <!-- Progress bar  -->
-            <div id="rightprogressbar">
+            <div class="steps-background" id="rightprogressbar">
 
                 <svg id="progress" width="334" height="334" viewBox="0 0 334 334" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_di_17_7)">
