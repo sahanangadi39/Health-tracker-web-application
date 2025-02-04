@@ -37,12 +37,13 @@
 
 
 .error-content h2 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     color: #666;
 }
 
 
-.error-content p {
+.error-content  {
+    margin-top: 50%;
     font-size: 1.2rem;
     color: solid black;
     margin-bottom: 20px;
