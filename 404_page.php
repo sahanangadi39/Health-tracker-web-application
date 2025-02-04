@@ -14,7 +14,7 @@
     ?>
         <div class="error-container">
             <div class="error-content">
-                <img src="Images/404.png" alt="404 Error" class="error-image">
+                <!-- <img src="Images/404.png" alt="404 Error" class="error-image"> -->
                 <h1>404</h1>
                 <h2>This Page Does Not Exist</h2>
                 <p>The page you were looking for appears to have been moved, deleted, or does not exist.</p>
