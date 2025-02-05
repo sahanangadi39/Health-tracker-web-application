@@ -25,12 +25,12 @@ $break_compliance = 60; // in percentage
 
 
 // variables for the left graphs
-$hyderate = 3;
-$posture = 15;
-$break = 18;
-$sleep = 7;
-$steps = 1721;
-$exercise = 79;
+$hyderate = $data['hyderate'];
+$posture = $data['posture'];
+$break = $data['breaks'];
+$sleep = $data['sleep'];
+$steps = $data['steps'];
+$exercise = $data['exercise'];
 
 $maxhyderate = 4;
 $maxposture = 20;
