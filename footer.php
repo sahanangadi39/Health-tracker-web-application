@@ -10,30 +10,30 @@
     
     <div id="footerhyperlinks">
         <div>
-            <a href="">Home</a>
-            <a href="">Health tracking</a>
-            <a href="">Health analysis</a>
-            <a href="">Mental health support</a>
+            <a href="home.php">Home</a>
+            <a href="tracker.php">Health tracking</a>
+            <a href="healthanalysis.php">Health analysis</a>
+            <a href="mentalsupport.php">Mental health support</a>
         </div>
 
         <div>
-            <a href="">Ai assistant</a>
-            <a href="">Daily reports</a>
-            <a href="">Notifications</a>
-            <a href="">Daily Tasks</a>
+            <a href="ai.php">Ai assistant</a>
+            <a href="dailyreports.php">Daily reports</a>
+            <a href="Notification.php">Notifications</a>
+            <a href="Datily_tasks.php">Daily Tasks</a>
         </div>
 
         <div>
-            <a href="">Profile</a>
-            <a href="">Blog</a>
-            <a href="">About Us</a>
-            <a href="">Contact</a>
+            <a href="profile.php">Profile</a>
+            <a href="Blog.php">Blog</a>
+            <a href="About us.php">About Us</a>
+            <a href="mailto:fitforce@sahan.in">Contact</a>
         </div>
 
         <div>
             <p>Contact Us</p>
             <p>Support@healthtracker.ai</p>
-            <p>&#128222; +1-800-123-4567</p>
+            <p>&#128222; +91-800-123-4567</p>
             <p>&copy; <?php echo date("Y") ?> HealthTracker.ai. All Rights Reserved.</p>
             <p>Commited to your health, every step of the way</p>
         </div>

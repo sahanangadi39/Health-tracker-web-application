@@ -41,7 +41,7 @@ if($num == 1){
 
 <body>
     <div class="login">
-        <a href="signup.php">Don't have an account? <b>Sign Up</b></a>
+        <a href="consent.php">Don't have an account? <b>Sign Up</b></a>
         <div class="logoformcontainer">
             <div class="logocontainer">
                 <img style="margin: 240px auto 0px 20px;" height="20px" width="fit-content" src="/Images/Group 1000005572.png" alt="logo">

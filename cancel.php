@@ -28,8 +28,8 @@
         <div id="cancel">
             <h1>We are sorry to <br> see you Go</h1>
             <div id="cancelpagebtn">
-                <button style="background-color: #3A49DAB2;" class="consent-cancel-btn">Leave</button>
-                <button>Proceed</button>
+                <button onclick='window.location.href="https://google.in"' style="background-color: #3A49DAB2;" class="consent-cancel-btn">Leave</button>
+                <button onclick='window.location.href="consent.php"'>Proceed</button>
             </div>
         </div>
     

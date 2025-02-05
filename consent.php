@@ -1,5 +1,5 @@
 <?php
-// require '/dbconnect/connect.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -79,8 +79,8 @@
                 </li>
             </ol>
                     <div class="consentbtn">
-                        <button style=" background-color: #3A49DAB2;">Cancel</button>
-                        <button>Allow</button>
+                        <button onclick ='window.location.href="cancel.php"' style=" background-color: #3A49DAB2;">Cancel</button>
+                        <button onclick ='window.location.href="signup.php"'>Allow</button>
                     </div>
         </div>
 

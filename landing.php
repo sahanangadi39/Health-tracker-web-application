@@ -30,7 +30,7 @@
             <img src="Images/logo1.png" alt="FitForce Logo" class="logo-image">
             <h1>Empowering Employees to Thrive</h1>
             <p>Join our journey to a healthy working life.<br>We got you covered.</p>
-            <button class="signup-btn">Sign Up</button>
+            <button onclick="window.location.href='consent.php'" class="signup-btn">Sign Up</button>
         </div>
     </div>
 

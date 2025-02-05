@@ -5,6 +5,12 @@ session_start();
 //     die();
 // }
 
+$jsonString = '{
+    "name": "DevPaws",
+    "role": "Software Developer",
+    "skills": ["PHP", "JavaScript", "Linux"]
+}';
+
 // database sql query 
 require 'databaseconnection.php';
 $email = $_SESSION['email'];
@@ -19,7 +25,7 @@ $username = $data['name'];
 $continuework_inscreentime = $data['screentime']; //in hours
 $totalofficeworingtime = 7; // in hours
 $percentage = $continuework_inscreentime / $totalofficeworingtime;
-$screentime = 952 - 952 * $percentage; // in percentage
+$screentimestroke = 952 - 952 * $percentage; // in percentage
 $average_screen_time = 6; // in hours
 $break_compliance = 60; // in percentage
 
@@ -33,7 +39,7 @@ $steps = $data['steps'];
 $exercise = $data['exercise'];
 
 $maxhyderate = 4;
-$maxposture = 20;
+$maxposture = 60;
 $maxbreak = 20;
 $maxsleep = 8;
 $maxexercise = 80;
