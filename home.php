@@ -67,6 +67,7 @@ $stepsstroke = 349 - 349*($steps/$maxsteps);
     <link rel="stylesheet" href="/Css/dash.css">
     <link rel="stylesheet" href="/Css/Blog.css">
     <link rel="stylesheet" href="/Css/home.css">
+    <link media="only screen and (max-width: 1380px)" rel="stylesheet" href="/Css/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

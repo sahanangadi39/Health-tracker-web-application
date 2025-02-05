@@ -1,0 +1,73 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+header nav{
+    display: none;
+}
+
+.upperdashboard{
+    flex-direction: column;
+}
+#leftgrid{
+    display: none;
+}
+
+#rewards-container .rewards-box{
+    width: 80vw;
+}
+#rewards-container{
+    width: fit-content;
+}
+
+#upperrightdashboard{
+    margin: auto;
+}
+
+#rectangle-graph{
+    width: 80vw;
+}
+
+#upperrightdashboard #rightprogressbar{
+    width: 60vw;
+}
+
+#health-insights-container #health-insights{
+    flex-direction: column ;
+}
+#progress{
+    width: 80vw;
+}
+#innerprogressbar{
+   width: 100%;
+   height: auto;
+}
+#innerprogressbar svg{
+    width: 100px
+}
+.disclamer p{
+    font-size: 20px;
+    margin: 0px;
+}
+.disclamer svg{
+    width: 40px;
+    height: auto;
+}
+
+.disclamer{
+    height: 40%;
+}
+
+#healthblogs{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+    width: 70vw;
+    margin: 5vh auto;
+    scale: 1.0;
+}
+
+footer{
+    display: none !important;
+}
+
