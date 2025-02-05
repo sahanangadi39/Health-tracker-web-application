@@ -76,11 +76,7 @@
 
 }
 
-/* @keyframes anime {
-    100% {
-        stroke-dashoffset: 476;
-    }
-} */
+
 
 .disclamer{
     display: flex;
@@ -139,10 +135,9 @@ svg text{
 }
 
 .leftgridstroke{
-    stroke-dasharray: 349;
-    stroke-dashoffset: 349;
-    animation: leftanime 1s ease-in-out forwards;
+    stroke-dasharray: 342;
     stroke-linecap: round;
+    stroke-dashoffset: 342;
 }
 
 #Vector_2,#Ellipse\ 6{
@@ -157,10 +152,24 @@ svg text{
 #upperleftdashboard p{
     margin-top: 10px;
 }
-@keyframes leftanime {
-    100%{
-        stroke-dashoffset: 180;
-    }
+
+#hyderatestroke{
+     animation: hyderate 1s ease-in-out forwards;
+}
+#posturestroke{
+    animation: posture 1s ease-in-out forwards;
+}
+#breaksstroke{
+    animation: breaks 1s ease-in-out forwards;
+}
+#sleepstroke{
+    animation: sleep 1s ease-in-out forwards;
+}
+#exercisestroke{
+    animation: exercise 1s ease-in-out forwards;
+}
+#stepsstroke{
+    animation: steps 1s ease-in-out forwards;
 }
 
 #Reward-progress{

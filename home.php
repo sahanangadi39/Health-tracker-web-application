@@ -25,12 +25,28 @@ $break_compliance = 60; // in percentage
 
 
 // variables for the left graphs
-$hyderate = 8;
-$posture = 20;
+$hyderate = 3;
+$maxhyderate = 4;
+$posture = 2;
+$maxposture = 20;
 $break = 20;
+$maxbreak = 20;
 $sleep = 8;
+$maxsleep = 8;
 $exercise = 80;
+$maxexercise = 80;
 $steps = 3000;
+$maxsteps = 3000;
+
+
+// stroke for hyderate
+
+$hyderatestroke =342 - 342*($hyderate/$maxhyderate);
+$posturestroke = 342 - 342*($posture/$maxposture);
+$breakstroke =342 - 342*($break/$maxbreak);
+$sleepstroke = 349 - 349*($sleep/$maxsleep);
+$exercisestroke = 349 - 349*($exercise/$maxexercise);
+$stepsstroke = 349 - 349*($steps/$maxsteps);
 ?>
 
 <!DOCTYPE html>
@@ -54,9 +70,45 @@ $steps = 3000;
     <style>
         @keyframes anime {
             100% {
-                stroke-dashoffset: <?php echo $screentime ?>;
+                stroke-dashoffset: <?php echo $screentimestroke ?>;
             }
         }
+
+        @keyframes hyderate {
+            100% {
+                stroke-dashoffset: <?php echo $hyderatestroke ?>;
+            }
+        }
+
+        @keyframes posture {
+            100% {
+                stroke-dashoffset: <?php echo $posturestroke ?>;
+            }
+        }
+        @keyframes breaks {
+            100% {
+                stroke-dashoffset: <?php echo $breakstroke ?>;
+            }
+        }
+
+        @keyframes sleep {
+            100% {
+                stroke-dashoffset: <?php echo $sleepstroke ?>;
+            }
+        }
+
+        @keyframes exercise {
+            100% {
+                stroke-dashoffset: <?php echo $exercisestroke ?>;
+            }
+        }
+
+        @keyframes steps {
+            100% {
+                stroke-dashoffset: <?php echo $stepsstroke ?>;
+            }
+        }
+
     </style>
 
 </head>
